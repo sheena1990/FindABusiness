@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.model.entity.User" table="YELP_USER">
+      <meta attribute="class-description">
+         This class contains the user detail. 
+      </meta>
+      <id name="user_id" type="string" column="user_id"/>
+      <property name="yelping_since" column="yelping_since" type="string"/>
+      <property name="name" column="name" type="string"/>
+      <property name="friends" column="friends" type="string"/>
+      <property name="fans" column="fans" type="long"/>
+      <property name="review_count" column="review_count" type="long"/>
+      <property name="votes_funny" column="votes_funny" type="long"/>
+      <property name="votes_useful" column="votes_useful" type="long"/>
+      <property name="votes_cool" column="votes_cool" type="long"/>
+      <property name="average_stars" column="average_stars" type="double"/>
+      <property name="compliments" column="compliments" type="string"/>
+      <property name="elite" column="elite" type="string"/>
+   </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.model.entity.Review" table="REVIEW">
+      <meta attribute="class-description">
+         This class contains the review detail. 
+      </meta>
+      <id name="review_id" type="string" column="review_id"/>
+      <property name="user_id" column="user_id" type="string"/>
+      <property name="business_id" column="business_id" type="string"/>
+      <property name="stars" column="stars" type="double"/>
+      <property name="date" column="r_date" type="string"/>
+      <property name="text" column="text" type="string"/>
+      <property name="votes_funny" column="votes_funny" type="long"/>
+      <property name="votes_useful" column="votes_useful" type="long"/>
+      <property name="votes_cool" column="votes_cool" type="long"/>
+   </class>
+</hibernate-mapping>

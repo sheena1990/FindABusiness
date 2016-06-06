@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+		<property name="hibernate.connection.username">hw2</property>
+		<property name="hibernate.connection.password">hw2</property>
+		<property name="hibernate.default_schema">hw2</property>
+		<property name="hibernate.connection.pool_size">5</property>
+		 <property name="hibernate.jdbc.batch_size">100</property>
+
+		<!-- List of XML mapping files -->
+		<mapping resource="com\hbm\Business.hbm.xml" />
+		<mapping resource="com\hbm\Attribute.hbm.xml" />
+		<mapping resource="com\hbm\Review.hbm.xml" />
+		<mapping resource="com\hbm\User.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

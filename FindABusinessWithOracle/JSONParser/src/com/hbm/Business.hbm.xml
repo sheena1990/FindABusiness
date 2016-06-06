@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.model.Business" table="BUSINESS">
+      <meta attribute="class-description">
+         This class contains the business detail. 
+      </meta>
+      <id name="businessId" type="string" column="b_id"/>
+      <property name="fullAddress" column="full_address" type="string"/>
+      <property name="city" column="city" type="string"/>
+      <property name="name" column="b_name" type="string"/>
+      <property name="state" column="state" type="string"/>
+      <property name="attributes" column="attributes" type="string"/>
+      <property name="categories" column="categories" type="string"/>
+      <property name="hours" column="hours" type="string"/>
+      <property name="stars" column="stars" type="double"/>
+   </class>
+</hibernate-mapping>

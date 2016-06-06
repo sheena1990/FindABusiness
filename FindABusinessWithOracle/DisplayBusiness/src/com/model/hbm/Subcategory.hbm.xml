@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.model.entity.Subcategory" table="SUBCATEGORY">
+      <meta attribute="class-description">
+         This class contains the business categories. 
+      </meta>
+      <id name="subcategoryId" type="string" column="sub_id"/>
+      <property name="subcategoryName" column="sub_name" type="string"/>
+   </class>
+</hibernate-mapping>
